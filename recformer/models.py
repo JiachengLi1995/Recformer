@@ -525,7 +525,6 @@ class RecformerForSeqRec(LongformerPreTrainedModel):
         super().__init__(config)
 
         self.longformer = RecformerModel(config)
-        self.lm_head = LongformerLMHead(config)
         self.sim = Similarity(config)
         # Initialize weights and apply final processing
         self.post_init()

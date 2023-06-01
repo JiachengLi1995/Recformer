@@ -3,8 +3,8 @@ import json
 from tqdm import tqdm
 import os
 
-META_ROOT = '/data1/jiacheng/deepx_dataset/amazon_v2/landing/category'
-SEQ_ROOT = '/data1/jiacheng/deepx_dataset/amazon_v2/review/categoryFiles'
+META_ROOT = '' # Set your meta data path
+SEQ_ROOT = '' # Set your seq data path
 
 pretrain_categories = ['Automotive', 'Cell_Phones_and_Accessories', \
               'Clothing_Shoes_and_Jewelry', 'Electronics', 'Grocery_and_Gourmet_Food', 'Home_and_Kitchen', \

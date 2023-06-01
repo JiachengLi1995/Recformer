@@ -3,7 +3,7 @@ from collections import OrderedDict
 from recformer import RecformerModel, RecformerConfig, RecformerForSeqRec
 
 PRETRAINED_CKPT_PATH = 'pretrain_ckpt/pytorch_model.bin'
-PRETRAINED_LONGFORMER_CKPT_PATH = 'longformer_ckpt/longformer-base-4096.bin'
+LONGFORMER_CKPT_PATH = 'longformer_ckpt/longformer-base-4096.bin'
 LONGFORMER_TYPE = 'allenai/longformer-base-4096'
 RECFORMER_OUTPUT_PATH = 'pretrain_ckpt/recformer_pretrain_ckpt.bin'
 RECFORMERSEQREC_OUTPUT_PATH = 'pretrain_ckpt/seqrec_pretrain_ckpt.bin'
@@ -11,7 +11,7 @@ RECFORMERSEQREC_OUTPUT_PATH = 'pretrain_ckpt/seqrec_pretrain_ckpt.bin'
 input_file = PRETRAINED_CKPT_PATH
 state_dict = torch.load(input_file)
 
-longformer_file = PRETRAINED_LONGFORMER_CKPT_PATH
+longformer_file = LONGFORMER_CKPT_PATH
 longformer_state_dict = torch.load(longformer_file)
 
 state_dict['_forward_module.model.longformer.embeddings.word_embeddings.weight'] = longformer_state_dict['longformer.embeddings.word_embeddings.weight']
