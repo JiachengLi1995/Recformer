@@ -132,6 +132,8 @@ bash finetune.sh
 ```
 Our code will train and evaluate the model for the sequential recommendation task and return all metrics used in our paper.
 
+<strong>Note</strong>: from our empirical results, you can set a smaller maximum length (512 or 256, our model is default to 1024) of Recformer `e.g., config.max_token_num = 512` to obtain more efficient finetuning and inference without obvious performance decay (128 has an obvious decay).
+
 ## Contact
 
 If you have any questions related to the code or the paper, feel free to email Jiacheng (`j9li@eng.ucsd.edu`).
