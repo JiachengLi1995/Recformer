@@ -138,7 +138,7 @@ If you have any questions related to the code or the paper, feel free to email J
 
 ## Citation
 
-Please cite our paper if you use UCEpic in your work:
+Please cite our paper if you use Recformer in your work:
 
 ```bibtex
 @inproceedings{li23text,
