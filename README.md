@@ -4,6 +4,8 @@ This repository contains the code of Recformer, a model learns natural language 
 
 Our KDD 2023 paper [Text Is All You Need: Learning Language Representations for Sequential Recommendation](https://arxiv.org/abs/2305.13731).
 
+## Due to Amazon policy, we have to set this repository private temporarily. We will apply for permission as soon as possible and make it public again after we get the approval from Amazon.
+<!-- 
 ## Quick Links
 
 - [Overview](#overview)
@@ -149,4 +151,4 @@ Please cite our paper if you use Recformer in your work:
   year = "2023",
   booktitle = "KDD"
 }
-```
+``` -->
